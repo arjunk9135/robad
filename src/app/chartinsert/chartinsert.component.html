@@ -1,0 +1,25 @@
+<form>
+    <div id="chartform">
+        <label id="idlabel" >ID</label>
+      <input id="id" type="number" class="form-control" placeholder="Enter data reading">&nbsp;
+      <label>Sunday </label>
+      <input id="sun" type="number" placeholder="Enter data reading" class="form-control">&nbsp;
+      <label>Monday </label>
+      <input id="mon" type="number" placeholder="Enter data reading" class="form-control">&nbsp;
+      <label>Tuesday </label>
+      <input id="tue" type="number" placeholder="Enter data reading"class="form-control">&nbsp;
+      <label>Wednesday </label>
+      <input id="wed" type="number" placeholder="Enter data reading" class="form-control"> &nbsp;
+      <label>Thursday </label>
+      <input id="thu" type="number" placeholder="Enter data reading" class="form-control">&nbsp;
+      <label>Friday </label>
+      <input id="fri" type="number" placeholder="Enter data reading" class="form-control">&nbsp;
+      <label>Saturday </label>
+      <input id="sat" type="number" placeholder="Enter data reading" class="form-control">&nbsp;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;<br>
+      <button (click)="onUpdate()" class="btn btn-success">UPDATE</button> &nbsp; &nbsp;
+      <button (click)="onDelete()" class="btn btn-danger">DELETE</button> &nbsp;
+      <button id="insertbtn" (click)="onInsert()" class="btn btn-primary">INSERT</button>
+      <div  class="error-msg"></div>
+    </div>
+  </form>
+  

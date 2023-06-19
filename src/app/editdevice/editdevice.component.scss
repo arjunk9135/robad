@@ -1,0 +1,155 @@
+// .card-list {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+//   }
+  
+//   .card {
+//     width: 500px;
+//     height: 400px;
+//     background-color: #f1f1f1;
+//     padding: 20px;
+//   }
+  
+//   .input-group {
+//     margin-bottom: 20px;
+//   }
+  
+//   .input-group label {
+//     display: block;
+//   }
+  
+//   .input-group input {
+//     width: 100%;
+//     padding: 5px;
+//     margin-top: 5px;
+//   }
+  
+//   .button-container {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//   }
+//   #updatecardbtn
+//   {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin-left: 0px;
+//     margin-top: 30px;
+//   }
+  
+
+
+
+//new edit
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100vh;
+  padding: 20px;
+}
+
+.left-card {
+  max-width: 68%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-card {
+  max-width: 30%;
+  flex-grow: 1;
+}
+
+.mat-mdc-form-field + .mat-mdc-form-field {
+  margin-left: 8px;
+}
+
+.card {
+  width: 500px;
+  height: 400px;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+#updatecardbtn {
+  margin-left: 0px;
+}
+
+.progress-bar-container {
+  width: 100%;
+  background-color: #c7e6ff;
+  margin-bottom: 10px;
+  padding: 10px 0; /* Add padding for spacing */
+}
+
+.progress-bar {
+  height: 5px;
+  background-color: #20a23e;
+  transition: width ease-in-out;
+  width: 0%;
+}
+
+button svg {
+  margin-left: 20px;
+}
+
+.green-card {
+  background-color: rgb(171, 223, 171);
+}
+
+.hi-text {
+ margin-left: 0px;
+}
+
+
+.example-section {
+  margin: 12px 0;
+}
+
+.example-margin {
+  margin: 0 12px;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 4px;
+}
+
+.bottom-card {
+  flex-grow: 0;
+  margin-top: 20px;
+}
+
+.toast
+{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  
+}

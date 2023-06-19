@@ -1,0 +1,77 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  
+  
+}
+
+mat-card {
+  width: 1200px;
+  height: 300px;
+  border-radius: 0px;
+  background-color: rgb(194, 200, 213);
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.namecard,
+.imeicard,.deviceidcard {
+  flex-basis: calc(50% - 10px); /* Adjust the spacing between cards as needed */
+  height: 150px;
+  margin: 5px;
+  background-color: rgb(47, 123, 221);
+  border-radius: 12px;
+  
+}
+
+@media screen and (max-width: 600px) {
+  mat-card {
+    width: 80vw;
+    height: auto;
+  }
+
+  .cards-container {
+    flex-wrap: wrap;
+  }
+
+  .namecard,
+  .imeicard,.deviceidcard,.submit {
+    flex-basis: 100%;
+    height: auto;
+  }
+}
+
+#idbtn
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.submit
+{
+  width: 10vw;
+  height: 0vw;
+}
+
+
+.card-container {
+  width: 900px;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-card {
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+}

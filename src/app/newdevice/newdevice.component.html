@@ -1,0 +1,74 @@
+<div class="card-container">
+  <mat-card class="small-card">
+    <mat-card-header>
+      <mat-card-title>
+        <h2 class="nav-link active"><span class="badge badge-success">Add a Device</span></h2>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form (ngSubmit)="submitForm()">
+        <!-- Content-->
+        <div class="cards-container">
+          <mat-card class="namecard">
+            <!-- Device Name -->
+            <mat-card-header>
+              <mat-card-title>
+                <h2 class="nav-link active"><span class="badge badge-success">Device Name</span></h2>
+              </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <!--Card content goes here.-->
+              <div class="form-outline mb-4">
+                <input [(ngModel)]="dname" placeholder="Enter name" type="text" name="dname" class="form-control" />
+                <label class="form-label" for="form2Example1"></label>
+              </div>
+            </mat-card-content>
+          </mat-card>
+          <!-- Device IMEI Number-->
+          <mat-card class="imeicard">
+            <mat-card-header>
+              <mat-card-title>
+                <h2 class="nav-link active"><span class="badge badge-success">Device IMEI</span></h2>
+              </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <!--Card content goes here.-->
+              
+              <div class="form-outline mb-4">
+                <input [(ngModel)]="imeinumber" placeholder="Enter IMEI" type="text" name="imeinumber" class="form-control"/>
+                <label class="form-label" for="form2Example1"></label>
+              </div>
+            </mat-card-content>
+          </mat-card>
+          <!--Device ID -->
+          <mat-card class="deviceidcard">
+            <mat-card-header>
+              <mat-card-title>
+                <h2 class="nav-link active"><span class="badge badge-success">Device Number</span></h2>
+              </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <!--Card content goes here.-->
+              <div class="form-outline mb-4">
+                <input [(ngModel)]="dnumber" placeholder="Enter Number" type="text" name="dnumber" class="form-control" />
+                <label class="form-label" for="form2Example1"></label>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <mat-card class="submit">
+          <mat-card-content>
+            <!--Card content goes here.-->
+            <div id="idbtn">
+              <button type="submit" class="btn btn-success">Register</button>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </form>
+      <br>
+      <div id="idbtn">
+        <button type="button" class="btn btn-primary" (click)="openQRCodeGenerator()">Open QR Code Generator</button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

@@ -1,0 +1,275 @@
+<div class="card-container">
+  <mat-card class="left-card">
+    <mat-card-content>
+      <!-- Left card content -->
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <div>
+              Device Automation Test
+              </div>
+              
+              <div style="margin-left: 10px;">
+                
+              </div> 
+              
+            </mat-panel-title>
+            
+            <mat-panel-description>
+              <!-- This is a summary of the content -->
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <!-- Panel Content -->
+          <div>
+            <button type="button" class="btn btn-info" (click)="testautomate()">Test</button>
+          </div>
+          <br>
+          <div class="progress-bar-container" style="border-radius: 10px;">
+            <div style="margin: 10px; border-radius: 10px;" class="progress-bar" [style.width.%]="confA-5"></div>
+            <br>
+            <div style="margin-left: 20px;">
+              <button style="background-color: rgb(255, 255, 255);" mat-raised-button color="grey">
+                Configuration 1
+                <svg *ngIf="conf1_check" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="green" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                </svg>
+              </button>
+              </div>
+            </div>
+            <div class="progress-bar-container" style="border-radius: 10px;">
+              <div style="margin: 10px; border-radius: 10px;" class="progress-bar" [style.width.%]="confB-5"></div>
+              <br>
+              <div style="margin-left: 20px;">
+                <button style="background-color: rgb(255, 255, 255);" mat-raised-button color="grey">
+                  Configuration 2
+                  <svg *ngIf="conf2_check" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="green" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                  </svg>
+                </button>
+                </div>
+              </div>
+              <div class="progress-bar-container" style="border-radius: 10px;">
+                <div style="margin: 10px; border-radius: 10px;" class="progress-bar" [style.width.%]="confC-5"></div>
+                <br>
+                <div style="margin-left: 20px;">
+                  <button style="background-color: rgb(255, 255, 255);" mat-raised-button color="grey">
+                    Configuration 3
+                    <svg *ngIf="conf3_check" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="green" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                    </svg>
+                  </button>
+                  </div>
+                </div>
+                <div class="progress-bar-container" style="border-radius: 10px;">
+                  <div style="margin: 10px; border-radius: 10px;" class="progress-bar" [style.width.%]="confD-5"></div>
+                  <br>
+                  <div style="margin-left: 20px;">
+                    <button style="background-color: rgb(255, 255, 255);" mat-raised-button color="grey">
+                      Configuration 4
+                      <svg *ngIf="conf4_check" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="green" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                      </svg>
+                    </button>
+                    </div>
+                  </div>
+                  <div class="progress-bar-container" style="border-radius: 10px;">
+                    <div style="margin: 10px; border-radius: 10px;" class="progress-bar" [style.width.%]="confE-5"></div>
+                    <br>
+                    <div style="margin-left: 20px;">
+                      <button style="background-color: rgb(255, 255, 255);" mat-raised-button color="grey">
+                        Configuration 5
+                        <svg *ngIf="conf5_check" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="green" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                        </svg>
+                      </button>
+                      </div>
+                    </div>
+                    <div class="progress-bar-container" style="border-radius: 10px;">
+                      <div style="margin: 10px; border-radius: 10px;" class="progress-bar" [style.width.%]="confF-5"></div>
+                      <br>
+                      <div style="margin-left: 20px;">
+                        <button style="background-color: rgb(255, 255, 255);" mat-raised-button color="grey">
+                          Configuration 6
+                          <svg *ngIf="conf6_check" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="green" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                          </svg>
+                        </button>
+                        </div>
+                      </div>
+                      <div class="progress-bar-container" style="border-radius: 10px;">
+                        <div style="margin: 10px; border-radius: 10px;" class="progress-bar" [style.width.%]="confG-5"></div>
+                        <br>
+                        <div style="margin-left: 20px;">
+                          <button style="background-color: rgb(255, 255, 255);" mat-raised-button color="grey">
+                            Configuration 7
+                            <svg *ngIf="conf7_check" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="green" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                            </svg>
+                          </button>
+                          </div>
+                        </div>
+                        <div class="progress-bar-container" style="border-radius: 10px;">
+                          <div style="margin: 10px; border-radius: 10px;" class="progress-bar" [style.width.%]="confH-5"></div>
+                          <br>
+                          <div style="margin-left: 20px;">
+                            <button style="background-color: rgb(255, 255, 255);" mat-raised-button color="grey">
+                              Configuration 8
+                              <svg *ngIf="conf8_check" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="green" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                              </svg>
+                            </button>
+                            </div>
+                          </div>
+            
+        </mat-expansion-panel>
+        <mat-expansion-panel [ngClass]="{'green-card': isManualSuccessful}" (opened)="panelOpenState = true" (closed)="panelOpenState = false" [expanded]="collapseB" #manualpanel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Device Manual Check
+              <div style="margin-left: 10px;">
+                <svg *ngIf="isManualSuccessful" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-square-fill" viewBox="0 0 16 16">
+                  <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                </svg>
+              </div>
+            </mat-panel-title>
+            <mat-panel-description>
+              
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <!---->
+          <div>
+            <label>Lights Functioning</label>
+          <mat-radio-group [(ngModel)]="lights_radio" aria-label="Select an option" (change)="lightSelectedValue()">
+            <mat-radio-button value="1">Yes</mat-radio-button>
+            <mat-radio-button value="2">No</mat-radio-button>
+          </mat-radio-group>
+          <mat-form-field *ngIf="!lights_working" style="width: 100%;" class="example-full-width">
+            <mat-label>Test Review</mat-label>
+            <textarea [(ngModel)]="light_review" matInput placeholder="Faulty Parts, Sections.."></textarea>
+          </mat-form-field>
+        </div>
+        <div>
+          <label>Speaker Functioning</label>
+        <mat-radio-group [(ngModel)]="speaker_radio" aria-label="Select an option" (change)="speakerSelectedValue()">
+          <mat-radio-button value="1">Yes</mat-radio-button>
+          <mat-radio-button value="2">No</mat-radio-button>
+        </mat-radio-group>
+        <mat-form-field *ngIf="!speaker_working" style="width: 100%;" class="example-full-width">
+          <mat-label>Test Review</mat-label>
+          <textarea [(ngModel)]="speaker_review" matInput placeholder="Faulty Parts, Sections.."></textarea>
+        </mat-form-field>
+      </div>
+      <div>
+        <label>Antenna Functioning</label>
+      <mat-radio-group [(ngModel)]="antenna_radio" aria-label="Select an option" (change)="antennaSelectedValue()">
+        <mat-radio-button value="1">Yes</mat-radio-button>
+        <mat-radio-button  value="2">No</mat-radio-button>
+      </mat-radio-group>
+      <mat-form-field *ngIf="!antenna_working" style="width: 100%;" class="example-full-width">
+        <mat-label>Test Review</mat-label>
+        <textarea [(ngModel)]="antenna_review" matInput placeholder="Faulty Parts, Sections.."></textarea>
+      </mat-form-field>
+      
+    </div>
+    <br>
+    <br>
+    <h3>Parts Replaced</h3>
+          <div style="border-radius: 10px;">
+          <label>Lights:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ this.faulty_lights }}</label> &nbsp;
+          <button class="btn btn-danger" (click)="removeFaultyLights()">-</button> &nbsp;
+         <button class="btn btn-success" (click)="addFaultyLights()">+</button>
+        </div> <br>
+        <div style="border-radius: 10px;">
+          <label>Antenna:&nbsp;&nbsp;&nbsp;&nbsp;{{ this.faulty_antenna }}</label> &nbsp;
+          <button class="btn btn-danger" (click)="removeFaultyantenna()">-</button> &nbsp;
+         <button class="btn btn-success" (click)="addFaultyantenna()">+</button>
+        </div>
+        <br>
+        <div style="border-radius: 10px;">
+          <label>Speaker:&nbsp;&nbsp;&nbsp;&nbsp;{{ this.faulty_speaker }}</label> &nbsp;
+          <button class="btn btn-danger" (click)="removeFaultySpeaker()">-</button> &nbsp;
+         <button class="btn btn-success" (click)="addFaultySpeaker()">+</button>
+        </div>
+        <br>
+        <button type="button" class="btn btn-primary" (click)="submitTest()">Submit Test</button>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>Report</mat-panel-title>
+            <!--Content-->
+           
+          </mat-expansion-panel-header>
+          
+            <div style="margin-left: 30px;">
+              <h3>Device :  {{this.dname}}</h3>
+             </div>
+             <div style="margin-left: 30px;">
+              <h3>IMEI   : {{this.imei}}</h3>
+             </div>
+             <div style="margin-left: 30px;">
+              <h3>Number : {{this.dnumber}}</h3>
+             </div>
+             <mat-card style="background-color: rgb(154, 203, 255);">
+              <div style="margin-left: 20px;">
+              <h2>Automation Test Results</h2>
+              </div>
+              <div style="margin-left: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+              <label>Configuration 1 : {{this.conf1working}}</label> <br><br>
+              <label>Configuration 2 : {{this.conf2working}}</label> <br><br>
+              <label>Configuration 3 : {{this.conf3working}}</label> <br><br>
+              <label>Configuration 4 : {{this.conf4working}}</label> <br><br>
+              <label>Configuration 5 : {{this.conf5working}}</label> <br><br>
+              <label>Configuration 6 : {{this.conf6working}}</label> <br><br>
+              <label>Configuration 7 : {{this.conf7working}}</label> <br><br>
+              <label>Configuration 8 : {{this.conf8working}}</label> <br><br>
+              </div>
+             </mat-card>
+             <mat-card style="margin-top: 20px; background-color: rgb(154, 203, 255);">
+              <div style="margin-left: 20px;">
+                <h2>Manual Test Results</h2>
+              </div>
+              <div style="margin-left: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                <label>Lights: {{this.lights_condition}}</label> <br><br>
+                <label>Speaker: {{this.speaker_condition}}</label> <br><br>
+                <label>Antenna: {{this.antenna_condition}}</label> <br><br>
+              </div>
+             </mat-card>
+          
+        </mat-expansion-panel>
+      </mat-accordion>
+      <br>
+      <br>
+      <button style="margin: 20px;" (click)="reportGenerate()" type="button" class="btn btn-primary">View Device Report</button>
+      <button style="margin: 20px;" (click)="approvedDevices()" type="button" class="btn btn-success">Approve Device</button>
+      <button style="margin: 20px;" (click)="maintenanceDevices()" type="button" class="btn btn-danger">Move to Maintenance</button>
+    </mat-card-content>
+  </mat-card>
+  
+  <mat-card class="right-card">
+    <mat-card-content>
+      <form (ngSubmit)="submitForm()">
+        <div class="input-group">
+          <label for="exampleInputEmail1">Device Name</label>
+          <input [(ngModel)]="dname" name="dname" class="form-control" type="text" />
+        </div>
+        <div class="input-group">
+          <label for="exampleInputEmail1">IMEI Number</label>
+          <input [(ngModel)]="imei" name="imei" class="form-control" type="text" />
+        </div>
+        <div class="input-group">
+          <label for="exampleInputEmail1">Device Number</label>
+          <input [(ngModel)]="dnumber" name="dnumber" class="form-control" type="text" />
+        </div>
+        <div class="button-container">
+          <button type="submit" class="btn btn-success" id="updatecardbtn">Update</button>
+        </div>
+      </form>
+    </mat-card-content>
+    
+  </mat-card>
+ <br>
+ 
+
+</div>
+

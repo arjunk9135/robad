@@ -1,0 +1,53 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 220px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+a
+{
+  color: white;
+}
+
+a:active
+{
+  color: white;
+}
+
+
+// mat-sidenav:not(.mat-drawer-opened) {
+//   transform: translate3d(0, 0, 0) !important;
+//   visibility: visible !important;
+//   width: 60px !important;
+//   overflow: hidden;
+// }
+
+mat-nav-list a {
+  display: block;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+/* Highlight effect for hovered elements */
+.mat-nav-list a:hover {
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+}
+
+/* White rounded rectangle for the currently selected section */
+.mat-nav-list a.active {
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+}

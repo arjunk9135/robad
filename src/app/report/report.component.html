@@ -1,0 +1,88 @@
+<div style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+<nav style="background-color: black;" class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      
+      Device Report
+    </a>
+  </div>
+</nav>
+
+<mat-card style="margin: 30px; background-color: rgb(255, 255, 255);">
+  <div style="display: flex; align-items: center; justify-content: center; font-size:4ch; margin-top: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Report</div>
+  <div *ngFor="let item of data">
+  <mat-card  style="margin-top:30px;">
+    <div style="margin: 30px;">
+      <label>Device &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item.device}}</label> <br><br>
+      <label>IMEI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item.imei}}</label> <br><br>
+      <label>Number &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item.number}}</label> <br> <br>
+      <label>Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item.time}}</label> <br> <br>
+      <img style="width: 280px; height: 160px; margin-left: 980px; margin-top: -200px;" src="https://scontent.fcok9-1.fna.fbcdn.net/v/t39.30808-6/285259544_545127493899751_6988574494652660987_n.jpg?stp=dst-jpg_p600x600&_nc_cat=106&ccb=1-7&_nc_sid=e3f864&_nc_ohc=TC9z3a92XVMAX8zYd-s&_nc_ht=scontent.fcok9-1.fna&oh=00_AfBLqnTORrixr9ur1zIMB5pB1q8zRTXtR-8UniPd0zRuoQ&oe=647923C2">
+      <div>
+        <div style="display: flex; align-items: center; justify-content: center;">Automation Test Results</div>
+        <br>
+        <br>
+        <table style="background-color: rgb(180, 219, 245);border-radius: 10px;" class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Configuration 1</th>
+              <th scope="col">Configuration 2</th>
+              <th scope="col">Configuration 3</th>
+              <th scope="col">Configuration 4</th>
+              <th scope="col">Configuration 5</th>
+              <th scope="col">Configuration 6</th>
+              <th scope="col">Configuration 7</th>
+              <th scope="col">Configuration 8</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>{{item.configuration1}}</td>
+              <td>{{item.configuration2}}</td>
+              <td>{{item.configuration3}}</td>
+              <td>{{item.configuration4}}</td>
+              <td>{{item.configuration5}}</td>
+              <td>{{item.configuration6}}</td>
+              <td>{{item.configuration7}}</td>
+              <td>{{item.configuration8}}</td> 
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br>
+      <br>
+      <div>
+        <div style="display: flex; align-items: center; justify-content: center;">Manual Test Results</div>
+        <br><br>
+        <table style="background-color: rgb(180, 219, 245); border-radius: 10px;" class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Lights</th>
+              <th scope="col">Speaker</th>
+              <th scope="col">Antenna</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>{{item.light}}</td>
+              <td>{{item.speaker}}</td>
+              <td>{{item.antenna}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </mat-card>
+  
+</div>
+
+</mat-card>
+<button style="display: flex; margin-left: 650px;" type="button" class="btn btn-primary" (click)="printScreen()">Print Report</button>
+<br>
+<br>
+
+</div>
